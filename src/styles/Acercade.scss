@@ -1,0 +1,12 @@
+@use 'vars';
+
+.acercademi {
+    border-radius: 12px;
+    padding: 12px 24px 24px 24px;
+    p{
+        padding: 0 12px 0 12px;
+        font-size: var(--md);
+        font-weight: 400;
+    }
+}
+

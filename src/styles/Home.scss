@@ -1,0 +1,17 @@
+@use 'vars';
+
+.Home {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-radius: 12px;
+    background-color: var(--gray-transparentoso);
+    margin-bottom: 24px;
+
+}

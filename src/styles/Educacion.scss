@@ -1,0 +1,118 @@
+@use 'vars';
+
+.educacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 24px;
+        
+        .formal {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            padding: 12px;
+
+            .grados {
+                display: flex;
+                flex-direction: column;
+
+                .grado {
+                    position: relative;
+                    padding: 12px 0 16px 24px;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        height: 4px;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                        background-color: var(--gray-transparentoso);
+
+                        transition: all 0.25s ease;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 4px;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                        background-color: var(--hospital-green);
+                        transform: scale(1, 0);
+                        transition: transform 0.25s ease;
+                        transform-origin: 0 100%;
+                    }
+        
+                    &:hover{
+                        &::after {
+                            transform: scale(1,1);
+                        }
+                    }
+                    h4 {
+                        font-size: var(--md);
+                        font-weight: 500;
+                    }
+                    span {
+                        font-size: var(--sm);
+                        font-weight: 400;
+                        color: var(--gray);
+                    }
+                    p {
+                        font-size: var(--sm);
+                        font-weight: 400;
+                        padding: 12px 0 0 12px;
+                    }
+                }
+            }
+
+        }
+        .tecnologias {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            padding: 12px;
+
+            .certificados {
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+                gap: 6px;
+                padding-left: 12px;
+                margin-bottom: 12px;
+            }
+
+            .vercertificados {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    text-decoration: none;
+                    color: var(--white);
+                    cursor: pointer;
+                    border: none;
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                        border-radius: 12px;
+                        gap: 6px;
+                        font-size: var(--sm);
+                        color: var(--gray);
+                        background-color: var(--gray-transparentoso);
+                        cursor: pointer;
+                        border: none;
+
+                        padding: 12px;
+
+                        transition: 0.25s ease all;
+
+                        &:hover {
+                            background-color: var(--hospital-green);
+                           color: var(--black);
+                        }   
+                            
+                    }
+                }
+
+            }
+        }
+}

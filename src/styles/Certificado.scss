@@ -1,0 +1,16 @@
+@use 'vars';
+
+.certificado {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--gray-transparentoso);
+    border-radius: 12px;
+    span{
+        padding: 3px;
+        font-size: var(--sm);
+    }
+}

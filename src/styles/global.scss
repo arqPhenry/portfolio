@@ -1,0 +1,28 @@
+@use 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: var(--gray-transparentoso);
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--gray);
+        border-radius: 5px;	
+    }
+}

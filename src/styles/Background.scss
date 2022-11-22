@@ -1,0 +1,67 @@
+@use 'vars';
+
+.shape {
+    border-radius: 50%;
+    position: absolute;
+    opacity: 70%;
+    z-index: -1;
+}
+
+#shape1, #shape2, #shape3, #shape4, #shape5 {
+    min-width: 400px;
+    height: 400px;
+    //mix-blend-mode: multiply;
+    filter: blur(150px);
+}
+
+#shape1 {
+    background-color: hsl(150, 83%, 64%);
+    top: 0%;
+    left: 0%;
+}
+#shape2 {
+    background-color: 	hsl(0, 0%, 29%);
+    top: 20%;
+    right: 0%;
+}
+#shape3 {
+    background-color: hsl(150, 43%, 39%);
+    top: 40%;
+    left: 25%;
+}
+#shape4 {
+    background-color: 	hsl(131, 7%, 47%);
+    top: 60%;
+    right: 5%;
+}
+#shape5 {
+    background-color: hsl(150, 43%, 39%);
+    bottom: 0%;
+    left: 5%;
+    opacity: 50%;
+}
+
+.scale-up-center {
+    animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1)
+      infinite both;
+  }
+  @keyframes scale-up-center {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(50px, -30px) scale(1.1);
+    }
+    66% {
+      transform: translate(-28px, 10px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+  .fade-delay-2000 {
+    animation-delay: 2s;
+  }
+  .fade-delay-4000 {
+    animation-delay: 4s;
+  }

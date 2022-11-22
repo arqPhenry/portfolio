@@ -1,0 +1,132 @@
+@use 'vars';
+
+header {
+    background-color: var(--gray-transparentoso2);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0 10px 50px 0px var(--negro-transparentoso);
+
+    border-radius: 0 0 12px 12px;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+
+        h2{
+            font-size: var(--sm);
+            font-weight: 400;
+            position: relative;
+            padding: 12px;
+            width: fit-content;
+
+            cursor: pointer;
+            &::before {
+                content: '';
+                position: absolute;
+                height: 4px;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                background-color: var(--hospital-green);
+                transform: scale(1, 0);
+                transition: transform 0.25s ease;
+                transform-origin: 0 100%;
+            }
+
+            &:hover{
+                &::before {
+                    transform: scale(1,1);
+                }
+                background-color: var(--gray-transparentoso);
+            }
+        }
+    
+            nav {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    padding: 0;
+                    li{ 
+                        button {
+                            background: none;
+                            color: var(--white);
+                            cursor: pointer;
+                            border: none;
+                            padding: 12px;
+                            position: relative;
+    
+                            font-size: var(--sm);
+                            font-weight: 500;
+    
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                height: 4px;
+                                width: 100%;
+                                bottom: 0;
+                                left: 0;
+                                background-color: var(--hospital-green);
+                                transform: scale(1, 0);
+                                transition: transform 0.25s ease;
+                                transform-origin: 0 100%;
+                            }
+    
+                            &:hover{
+                                &::before {
+                                    transform: scale(1,1);
+                                }
+                                background-color: var(--gray-transparentoso);
+                            }
+    
+                            
+                        }
+                    }
+                }
+            }
+            div {
+                display: flex;
+                button {
+                    background: none;
+                    color: var(--white);
+                    cursor: pointer;
+                    border: none;
+                    padding: 12px;
+                    position: relative;
+
+                    font-size: var(--sm);
+                    font-weight: 500;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 4px;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                        background-color: var(--hospital-green);
+                        transform: scale(1, 0);
+                        transition: transform 0.25s ease;
+                        transform-origin: 0 100%;
+                    }
+
+                    &:hover{
+                        &::before {
+                            transform: scale(1,1);
+                        }
+                        background-color: var(--gray-transparentoso);
+                    }
+
+                    
+                }
+            }
+    }
+
+}

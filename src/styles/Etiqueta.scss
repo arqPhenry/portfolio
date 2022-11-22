@@ -1,0 +1,22 @@
+@use 'vars';
+
+.Etiqueta {
+    padding: 6px 0 6px 0;
+    font-size: var(--lg);
+    font-weight: 500;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: var(--hospital-green);
+    }
+}
+
+.eticontainer {
+    margin-bottom: 24px;
+}

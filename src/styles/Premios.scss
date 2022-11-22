@@ -1,0 +1,19 @@
+.premios {
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    .contenedor {
+        display: flex;
+        justify-content: space-around;
+
+        .premio {
+            div {
+                display: flex;
+                flex-direction: column;
+                span {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

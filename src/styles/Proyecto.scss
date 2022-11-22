@@ -1,0 +1,62 @@
+@use 'vars';
+
+.proyecto {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 0 12px 0 12px;
+    background-color: var(--gray-transparentoso);
+    border-radius: 12px;
+    padding: 12px;
+
+    gap: 12px;
+
+    h4 {
+        font-size: var(--md);
+        font-weight: 500;
+    }
+    p {
+        font-size: var(--sm);
+        padding: 0 12px;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            font-size: var(--vsm);
+            color: var(--gray)
+        }
+        .links {
+            display: flex;
+            gap: 6px;
+
+            a {
+                text-decoration: none;
+                button {
+                    background-color: var(--gray-transparentoso);
+                    padding: 6px;
+                    border: none;
+                    font-size: var(--vsm);
+                    color: var(--gray);
+                    border-radius: 6px;
+                    cursor: pointer;
+                    transition: 0.25s ease all;
+    
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+    
+                    &:hover {
+                        background-color: var(--hospital-green);
+                        color: var(--black);
+                    }
+                }
+                :hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,6 +1,7 @@
 @use 'vars';
 
 header {
+    display: g;
     background-color: var(--gray-transparentoso2);
     position: sticky;
     top: 0px;
@@ -118,7 +119,7 @@ header {
 @media (max-width: 640px) {
     header {
         .container {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: auto;
             img {
                 display: none;
             }
@@ -126,16 +127,11 @@ header {
                 ul {
                     li {
                         font-size: var(--vsm);
-                        font-weight: 600;
                     }
                 }
             }
             div {
-                display: flex;
-                button {
-                    font-size: var(--vsm);
-                    font-weight: 600;
-                }
+                display: none;
             }
         }
     }

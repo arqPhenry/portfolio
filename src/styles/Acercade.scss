@@ -10,3 +10,14 @@
     }
 }
 
+@media (max-width: 640px) {
+    .acercademi {
+        p{
+            padding: 0 12px 0 12px;
+            font-size: var(--md);
+            font-weight: 400;
+        }
+    }
+
+}
+

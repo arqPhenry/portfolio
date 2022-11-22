@@ -14,3 +14,17 @@
         font-size: var(--sm);
     }
 }
+
+@media (max-width: 640px) {
+    .educacion {
+        .tecnologias {
+            .certificado {
+                span {
+                    font-size: var(--vsm);
+                }
+                
+            }
+        }
+    }
+
+}

@@ -17,116 +17,128 @@ header {
         justify-content: center;
         place-items: center;
 
-        h2{
-            font-size: var(--sm);
-            font-weight: 400;
+        img{
             position: relative;
-            padding: 12px;
-            width: fit-content;
+            padding: 6px;
+            max-width: 40px;
+            color: gray;
 
             cursor: pointer;
-            &::before {
-                content: '';
-                position: absolute;
-                height: 4px;
-                width: 100%;
-                bottom: 0;
-                left: 0;
-                background-color: var(--hospital-green);
-                transform: scale(1, 0);
-                transition: transform 0.25s ease;
-                transform-origin: 0 100%;
-            }
 
             &:hover{
-                &::before {
-                    transform: scale(1,1);
-                }
                 background-color: var(--gray-transparentoso);
             }
         }
     
-            nav {
+        nav {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            ul{
+                list-style-type: none;
                 display: flex;
-                margin: 0;
                 padding: 0;
-                ul{
-                    list-style-type: none;
-                    display: flex;
-                    padding: 0;
-                    li{ 
-                        button {
-                            background: none;
-                            color: var(--white);
-                            cursor: pointer;
-                            border: none;
-                            padding: 12px;
-                            position: relative;
-    
-                            font-size: var(--sm);
-                            font-weight: 500;
-    
-                            &::before {
-                                content: '';
-                                position: absolute;
-                                height: 4px;
-                                width: 100%;
-                                bottom: 0;
-                                left: 0;
-                                background-color: var(--hospital-green);
-                                transform: scale(1, 0);
-                                transition: transform 0.25s ease;
-                                transform-origin: 0 100%;
-                            }
-    
-                            &:hover{
-                                &::before {
-                                    transform: scale(1,1);
-                                }
-                                background-color: var(--gray-transparentoso);
-                            }
-    
-                            
+                li{ 
+                    button {
+                        background: none;
+                        color: var(--white);
+                        cursor: pointer;
+                        border: none;
+                        padding: 12px;
+                        position: relative;
+
+                        font-size: var(--sm);
+                        font-weight: 500;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            height: 4px;
+                            width: 100%;
+                            bottom: 0;
+                            left: 0;
+                            background-color: var(--hospital-green);
+                            transform: scale(1, 0);
+                            transition: transform 0.25s ease;
+                            transform-origin: 0 100%;
                         }
+
+                        &:hover{
+                            &::before {
+                                transform: scale(1,1);
+                            }
+                            background-color: var(--gray-transparentoso);
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+        div {
+            display: flex;
+            button {
+                background: none;
+                color: var(--white);
+                cursor: pointer;
+                border: none;
+                padding: 12px;
+                position: relative;
+
+                font-size: var(--sm);
+                font-weight: 500;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 4px;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    background-color: var(--hospital-green);
+                    transform: scale(1, 0);
+                    transition: transform 0.25s ease;
+                    transform-origin: 0 100%;
+                }
+
+                &:hover{
+                    &::before {
+                        transform: scale(1,1);
+                    }
+                    background-color: var(--gray-transparentoso);
+                }
+
+                
+            }
+        }
+    }
+
+}
+
+@media (max-width: 640px) {
+    header {
+        .container {
+            grid-template-columns: 1fr 1fr;
+            img {
+                display: none;
+            }
+            nav {
+                ul {
+                    li {
+                        font-size: var(--vsm);
+                        font-weight: 600;
                     }
                 }
             }
             div {
                 display: flex;
                 button {
-                    background: none;
-                    color: var(--white);
-                    cursor: pointer;
-                    border: none;
-                    padding: 12px;
-                    position: relative;
-
-                    font-size: var(--sm);
-                    font-weight: 500;
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        height: 4px;
-                        width: 100%;
-                        bottom: 0;
-                        left: 0;
-                        background-color: var(--hospital-green);
-                        transform: scale(1, 0);
-                        transition: transform 0.25s ease;
-                        transform-origin: 0 100%;
-                    }
-
-                    &:hover{
-                        &::before {
-                            transform: scale(1,1);
-                        }
-                        background-color: var(--gray-transparentoso);
-                    }
-
-                    
+                    font-size: var(--vsm);
+                    font-weight: 600;
                 }
             }
+        }
     }
+
 
 }

@@ -116,3 +116,17 @@
             }
         }
 }
+
+@media (max-width: 720px) {
+    .educacion {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+
+        .tecnologias {
+            .certificados {
+                grid-template-columns: repeat(4, auto);
+            }
+        }
+    }
+
+}

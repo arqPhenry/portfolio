@@ -12,3 +12,14 @@
         gap: 12px;
     }
 }
+
+@media (max-width: 720px) {
+    .portafolio {
+        .proyectos {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+        }
+    }
+
+
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import '@styles/NavBar.scss'
+import loguito from '../assets/logo.svg'
 
 export const handleClickLogo = () => {
   document.getElementById('inicio').scrollIntoView({ behavior: 'smooth', block: 'center' })
@@ -30,7 +31,7 @@ const NavBar = () => {
         <nav>
           {navLinks.map(nav => renderNavLink(nav))}
         </nav>
-        <h2 onClick={handleClickLogo} >HNFD</h2>
+        <img src={loguito} alt='logo' />
         <div>
           <button>ES</button>
           <button>EN</button>

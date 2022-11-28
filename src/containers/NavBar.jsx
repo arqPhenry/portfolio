@@ -1,40 +1,55 @@
 import React from 'react'
 import '@styles/NavBar.scss'
 import loguito from '../assets/logo.svg'
+import { NavLink } from 'react-router-dom'
 
 export const handleClickLogo = () => {
   document.getElementById('inicio').scrollIntoView({ behavior: 'smooth', block: 'center' })
 }
 
+export const handleClickInfo = () => {
+  document.getElementById('info').scrollIntoView({ behavior: 'smooth', block: 'center' })
+}
+
+export const handleClickPortfolio = () => {
+  document.getElementById('portafolio').scrollIntoView({ behavior: 'smooth', block: 'center' })
+}
+
+export const handleClickContact = () => {
+  document.getElementById('contacto').scrollIntoView({ behavior: 'smooth', block: 'center' })
+}
+
+export const handleClickEducation = () => {
+  document.getElementById('educacion').scrollIntoView({ behavior: 'smooth', block: 'center' })
+}
+
 const NavBar = () => {
-  const navLinks = ['Inicio', 'Info', 'Portafolio', 'Contacto', 'Educacion']
-
-  const renderNavLink = (content) => {
-    const scrollToId = `${content.toLowerCase()}`
-
-    const handleClickNav = () => {
-      document.getElementById(scrollToId).scrollIntoView({ behavior: 'smooth', block: 'center' })
-    }
-
-    return (
-      <ul key={content}>
-        <li>
-          <button onClick={handleClickNav} >{content}</button>
-        </li>
-      </ul>
-    )
-  }
-
   return (
     <header>
       <div className='container'>
         <nav>
-          {navLinks.map(nav => renderNavLink(nav))}
+          <ul>
+            <li>
+              <button onClick={handleClickLogo}>Inicio</button>
+            </li>
+            <li>
+              <button onClick={handleClickInfo}>Info</button>
+            </li>
+            <li>
+              <button onClick={handleClickContact}>Contacto</button>
+            </li>
+            <li>
+              <button onClick={handleClickPortfolio}>Portafolio</button>
+            </li>
+            <li>
+              <button onClick={handleClickEducation}>Educacion</button>
+            </li>
+          </ul>
         </nav>
-        <img src={loguito} alt='logo' />
+        <img src={loguito} alt='logo' onClick={handleClickLogo} />
         <div>
-          <button>ES</button>
-          <button>EN</button>
+          <NavLink to='/' className='link'>ES</NavLink>
+          <NavLink to='/en' className='link'>EN</NavLink>
         </div>
       </div>
     </header>

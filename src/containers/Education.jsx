@@ -7,42 +7,42 @@ import { SiJavascript, SiReact, SiCss3, SiHtml5, SiWebpack, SiGit, SiNextdotjs, 
 import { DiNpm, DiSass } from 'react-icons/di'
 import { BsPlayCircle } from 'react-icons/bs'
 
-const Educacion = () => {
+const Education = () => {
   return (
     <section className='educacion' id='educacion'>
             <div className='formal'>
-                <Etiqueta texto={'Educación'}/>
+                <Etiqueta texto={'Education'}/>
                 <div className='grados'>
                     <div className='grado'>
                         <h4>React.js Developer</h4>
-                        <span>Platzi · Abril 2022 - Actualidad</span>
+                        <span>Platzi · Abril 2021 - Present</span>
                         <p>
-                            Ruta de Frontend con React, con todas sus bases: <br />
-                            · React Hooks <br />
-                            · Patrones de render <br />
-                            · Manejo Profesional del Estado <br />
-                            · Navegación con React Router, etc.
+                            Frontend path with React, with all its bases: <br />
+                                · React Hooks <br />
+                                · Render Patterns <br />
+                                · Professional State Management <br />
+                                · Navigation with React Router, etc.
                         </p>
                     </div>
                     <div className='grado'>
                         <h4>Frontend Developer</h4>
-                        <span>Platzi · Sep 2021 - Actualidad</span>
+                        <span>Platzi · Sep 2020 - Present</span>
                         <p>
-                            Formación como frontend web developer haciendo uso de
-                            tecnologías actuales (ECMAscript 6, WebPack,
-                            TailwindCSS, NPM, Bootstrap, TypeScript, etc.), código
-                            limpio, optimizaciones, testing y habilidades blandas.
+                            Training as a frontend web developer making use of
+                            current technologies (ECMAscript 6, WebPack,
+                            TailwindCSS, NPM, Bootstrap, TypeScript, etc.), clean code, optimizations
+                            optimizations, testing and soft skills.
                         </p>
                     </div>
                     <div className='grado'>
-                        <h4>Arquitecto</h4>
+                        <h4>Bachelor of Architecture (BArch)</h4>
                         <span>Universidad de Buenos Aires · 2022 - 2024</span> <br />
                         <span>Universidad Simón Bolívar, Caracas · 2017 - 2020</span>
                     </div>
                 </div>
             </div>
             <div className='tecnologias'>
-                <Etiqueta texto={'Tecnologías'}/>
+                <Etiqueta texto={'Technologies'}/>
                 <div className='certificados'>
                     <Certificado titulo={'HTML'}><SiHtml5 size='26px' /></Certificado>
                     <Certificado titulo={'CSS'}><SiCss3 size='26px' /></Certificado>
@@ -62,11 +62,11 @@ const Educacion = () => {
                     <Certificado titulo={'Cypress'}><SiCypress size='26px' /></Certificado>
                 </div>
                 <div className='vercertificados'>
-                    <a href="https://www.linkedin.com/in/navashenrym/details/certifications/" target='_blank' rel='noreferrer'><button>Ver más <HiOutlineExternalLink size='18px' /></button></a>
+                    <a href="https://www.linkedin.com/in/navashenrym/details/certifications/" target='_blank' rel='noreferrer'><button>See more <HiOutlineExternalLink size='18px' /></button></a>
                 </div>
             </div>
     </section>
   )
 }
 
-export { Educacion }
+export { Education }

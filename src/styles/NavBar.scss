@@ -78,7 +78,8 @@ header {
         }
         div {
             display: flex;
-            button {
+            .link {
+                text-decoration: none;
                 background: none;
                 color: var(--white);
                 cursor: pointer;

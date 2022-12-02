@@ -1,44 +1,8 @@
 @use 'vars';
-
-header {
-    display: g;
-    background-color: var(--gray-transparentoso2);
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    z-index: 5;
-    box-shadow: 0 10px 50px 0px var(--negro-transparentoso);
-
-    border-radius: 0 0 12px 12px;
-
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        justify-content: center;
-        place-items: center;
-
-        img{
-            position: relative;
-            padding: 6px;
-            max-width: 40px;
-            color: gray;
-
-            cursor: pointer;
-
-            &:hover{
-                background-color: var(--gray-transparentoso);
-            }
-        }
     
-        nav {
-            display: flex;
-            margin: 0;
-            padding: 0;
+        nav { 
+            background-color:  var(--gray-transparentoso3) !important;
             ul{
-                list-style-type: none;
-                display: flex;
-                padding: 0;
                 li{ 
                     button {
                         background: none;
@@ -77,7 +41,6 @@ header {
             }
         }
         div {
-            display: flex;
             .link {
                 text-decoration: none;
                 background: none;
@@ -113,29 +76,3 @@ header {
                 
             }
         }
-    }
-
-}
-
-@media (max-width: 640px) {
-    header {
-        .container {
-            grid-template-columns: auto;
-            img {
-                display: none;
-            }
-            nav {
-                ul {
-                    li {
-                        font-size: var(--vsm);
-                    }
-                }
-            }
-            div {
-                display: none;
-            }
-        }
-    }
-
-
-}

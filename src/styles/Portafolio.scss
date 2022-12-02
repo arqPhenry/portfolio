@@ -1,19 +1,14 @@
 @use 'vars';
 
 .portafolio {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    margin-bottom: 24px;
-
     .proyectos {
         display: grid;
         grid-template-columns: auto auto;
-        padding: 12px;
         gap: 12px;
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     .portafolio {
         .proyectos {
             grid-template-columns: auto;

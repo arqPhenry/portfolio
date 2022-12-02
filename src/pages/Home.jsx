@@ -1,5 +1,4 @@
 import React from 'react'
-import '@styles/Home.scss'
 import { NavBar } from '@containers/NavBar'
 import { Presentacion } from '@containers/Presentacion'
 import { Datos } from '@containers/Datos'
@@ -11,17 +10,19 @@ import { Footer } from '@containers/Footer'
 
 const Home = () => {
   return (
-        <div className='Home'>
-            <NavBar />
+        <div className='container'>
+          <NavBar />
+          <main>
             <Presentacion />
-            <div id='info' className='info'>
-                <Acercade />
-                <Datos />
+            <div className='row mt-4'>
+              <Acercade />
+              <Datos />
             </div>
             <Portafolio />
             <Educacion />
             <Formulario />
-            <Footer />
+          </main>
+          <Footer />
         </div>
   )
 }

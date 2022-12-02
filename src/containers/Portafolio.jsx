@@ -52,33 +52,35 @@ const Portafolio = () => {
   const repo4 = 'https://github.com/arqPhenry/adviceGenerator'
 
   return (
-    <section className='portafolio' id='portafolio'>
-        <Etiqueta texto={'Últimos proyectos'} />
-        <div className='proyectos'>
-            <Proyecto
-                titulo={t1}
-                descrp={descrp1}
-                fecha={fecha1}
-                link={link1}
-                repo={repo1} />
-            <Proyecto
-                titulo={t2}
-                descrp={descrp2}
-                fecha={fecha2}
-                link={link2}
-                repo={repo2} />
-            <Proyecto
-                titulo={t3}
-                descrp={descrp3}
-                fecha={fecha3}
-                link={link3}
-                repo={repo3} />
-            <Proyecto
-                titulo={t4}
-                descrp={descrp4}
-                fecha={fecha4}
-                link={link4}
-                repo={repo4} />
+    <section className='row portafolio mt-4' id='portafolio'>
+        <div className='col'>
+            <Etiqueta texto={'Últimos proyectos'} />
+            <div className='proyectos'>
+                <Proyecto
+                    titulo={t1}
+                    descrp={descrp1}
+                    fecha={fecha1}
+                    link={link1}
+                    repo={repo1} />
+                <Proyecto
+                    titulo={t2}
+                    descrp={descrp2}
+                    fecha={fecha2}
+                    link={link2}
+                    repo={repo2} />
+                <Proyecto
+                    titulo={t3}
+                    descrp={descrp3}
+                    fecha={fecha3}
+                    link={link3}
+                    repo={repo3} />
+                <Proyecto
+                    titulo={t4}
+                    descrp={descrp4}
+                    fecha={fecha4}
+                    link={link4}
+                    repo={repo4} />
+            </div>
         </div>
     </section>
   )

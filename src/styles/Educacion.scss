@@ -1,23 +1,14 @@
 @use 'vars';
 
 .educacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 24px;
-        
         .formal {
             display: grid;
             grid-template-rows: auto 1fr;
-            padding: 12px;
-
             .grados {
                 display: flex;
                 flex-direction: column;
-
                 .grado {
                     position: relative;
-                    padding: 12px 0 16px 24px;
-
                     &::before{
                         content: '';
                         position: absolute;
@@ -60,7 +51,6 @@
                     p {
                         font-size: var(--sm);
                         font-weight: 400;
-                        padding: 12px 0 0 12px;
                     }
                 }
             }
@@ -69,14 +59,11 @@
         .tecnologias {
             display: grid;
             grid-template-rows: auto 1fr auto;
-            padding: 12px;
 
             .certificados {
                 display: grid;
                 grid-template-columns: repeat(4, auto);
                 gap: 6px;
-                padding-left: 12px;
-                margin-bottom: 12px;
             }
 
             .vercertificados {
@@ -88,12 +75,10 @@
                     text-decoration: none;
                     color: var(--white);
                     cursor: pointer;
-                    border: none;
 
                     button {
                         display: flex;
                         align-items: center;
-                        border-radius: 12px;
                         gap: 6px;
                         font-size: var(--sm);
                         color: var(--gray);
@@ -115,18 +100,4 @@
 
             }
         }
-}
-
-@media (max-width: 720px) {
-    .educacion {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-
-        .tecnologias {
-            .certificados {
-                grid-template-columns: repeat(4, auto);
-            }
-        }
-    }
-
 }

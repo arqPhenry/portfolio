@@ -11,37 +11,40 @@ const Datos = () => {
   }
 
   return (
-    <section className='datos' id='datos'>
-        <div id='contacto' className='contacto'>
-            <Etiqueta texto={'Contacto'} />
-            <ul>
-                <li>
-                  <a href="https://www.linkedin.com/in/navashenrym/" target='_blank' rel='noreferrer'>
-                    <AiOutlineLinkedin size= '24px' />
-                    <span>LinkedIn</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/arqPhenry" target='_blank' rel='noreferrer'>
-                    <AiOutlineGithub size= '24px' />
-                    <span>GitHub</span>
-                  </a>
-                </li>
-                <li onClick={handleClickMail}>
-                  <HiOutlineMail size= '24px' />
-                  <span>Mail</span>
-                </li>
-                <li>
-                  <a href={cv} target='_blank' rel='noreferrer'>
-                  <HiOutlineDocumentText size= '24px' />
-                  <span>CV</span>
-                  </a>
-                </li>
-            </ul>
+    <section className='col-12 col-md-4 datos' id='contacto'>
+      <div className="col-12"><Etiqueta texto={'Contacto'}/></div>
+      <div className='col-12 contacto'>
+        <ul>
+          <li className='rounded-3 py-2'>
+            <a href="https://www.linkedin.com/in/navashenrym/" target='_blank' rel='noreferrer'>
+              <AiOutlineLinkedin size= '24px' />
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li className='rounded-3 py-2'>
+            <a href="https://github.com/arqPhenry" target='_blank' rel='noreferrer'>
+              <AiOutlineGithub size= '24px' />
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li onClick={handleClickMail} className='rounded-3 py-2'>
+            <HiOutlineMail size= '24px' />
+            <span>Mail</span>
+          </li>
+          <li className='rounded-3 py-2'>
+            <a href={cv} target='_blank' rel='noreferrer'>
+            <HiOutlineDocumentText size= '24px' />
+            <span>CV</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="col-12">
+        <div id='ubicacion' className='ubicacion text-center rounded-3 py-2'>
+          <span>📍 Buenos Aires, Argentina</span>
         </div>
-        <div id='ubicacion' className='ubicacion'>
-            <p>📍 Buenos Aires, Argentina</p>
-        </div>
+      </div>
+
     </section>
   )
 }

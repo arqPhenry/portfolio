@@ -1,56 +1,38 @@
 @use 'vars';
 
-.datos {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    
-    padding: 12px 24px 24px 24px;
-}
-
 .contacto {
-    display: grid;
-    grid-template-rows: auto auto;
-    padding-bottom: 12px;
+    
     ul {
         display: grid;
         grid-template-columns: auto auto;
-        list-style: none;
         gap: 6px;
         padding: 0;
-
+        list-style: none;
         li{
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            padding: 6px;
             background-color: var(--gray-transparentoso);
-            
             cursor: pointer;
-            border-radius: 12px;
-
             font-size: var(--sm);
             color: var(--white);
-            
-
             transition: 0.25s ease all;
-
             &:hover {
                 background-color: var(--hospital-green);
                 color: var(--black);
-
                 a {
                     color: var(--black)
                 }
             }
             
-
-            a{  
+            a{ 
+                width: 100%;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: center;
                 text-decoration: none;
-                width: 100%;
-
                 font-size: var(--sm);
                 color: var(--white)
             }
@@ -60,11 +42,6 @@
 
 .ubicacion {
     background-color: var(--gray-transparentoso);
-    border-radius: 12px;
-    padding: 12px;
     font-size: var(--sm);
     color: var(--white);
-
-    display: flex;
-    justify-content: center;
 }

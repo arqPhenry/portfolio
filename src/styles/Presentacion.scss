@@ -1,26 +1,13 @@
 .presentacion {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 12px;
-    justify-content: space-around;
-    padding: 36px 0;
 
-    .titulo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h1 {
-            font-size: 64px;
-        }
-        h3 {
-            font-size: 24px;
-        }
+    h1 {
+        font-size: 54px;
+    }
+    h3 {
+        font-size: 32px;
     }
 
     figure {
-        display: flex;
-        place-items: center;
-
         position: relative;
         &::before {
             content: '';
@@ -41,55 +28,22 @@
             background-color: var(--hospital-green);
         }
         img {
-            max-height: 400px
+            width: 100%;
         }
         
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 425px) {
     .presentacion {
-        .titulo {
-            h1 {
-                font-size: 48px;
-            }
-            h3 {
-                font-size: 18px;
-            }
-            padding: 12px;
+
+        h1 {
+            font-size: 32px;
         }
-        figure {
-            img {
-                max-height: 350px; 
-            }
-            &::before {
-                right: 0;
-            }
-            &::after {
-                left: 0;
-            }
-            padding: 12px;
+        h3 {
+            font-size: 24px;
         }
     }
 
 
-}
-
-@media (max-width: 640px) {
-    .presentacion {
-        .titulo {
-            h1 {
-                font-size: 32px;
-            }
-            h3 {
-                font-size: 16px;
-            }
-        }
-        figure {
-            img {
-                max-height: 250px;
-            }
-        }
-    }
-    
 }

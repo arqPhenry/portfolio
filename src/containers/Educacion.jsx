@@ -9,10 +9,10 @@ import { BsPlayCircle } from 'react-icons/bs'
 
 const Educacion = () => {
   return (
-    <section className='educacion' id='educacion'>
-            <div className='formal'>
+    <section className='row educacion py-3 mt-4'>
+            <div className='col-12 col-lg-6 formal' id='educacion'>
                 <Etiqueta texto={'Educación'}/>
-                <div className='grados'>
+                <div className='grados mb-2'>
                     <div className='grado'>
                         <h4>React.js Developer</h4>
                         <span>Platzi · Abril 2022 - Actualidad</span>
@@ -24,7 +24,7 @@ const Educacion = () => {
                             · Navegación con React Router, etc.
                         </p>
                     </div>
-                    <div className='grado'>
+                    <div className='grado mt-2'>
                         <h4>Frontend Developer</h4>
                         <span>Platzi · Sep 2021 - Actualidad</span>
                         <p>
@@ -34,16 +34,16 @@ const Educacion = () => {
                             limpio, optimizaciones, testing y habilidades blandas.
                         </p>
                     </div>
-                    <div className='grado'>
+                    <div className='grado mt-2 pb-3'>
                         <h4>Arquitecto</h4>
                         <span>Universidad de Buenos Aires · 2022 - 2024</span> <br />
                         <span>Universidad Simón Bolívar, Caracas · 2017 - 2020</span>
                     </div>
                 </div>
             </div>
-            <div className='tecnologias'>
+            <div className='col-12 col-lg-6 tecnologias'>
                 <Etiqueta texto={'Tecnologías'}/>
-                <div className='certificados'>
+                <div className='certificados mb-2'>
                     <Certificado titulo={'HTML'}><SiHtml5 size='26px' /></Certificado>
                     <Certificado titulo={'CSS'}><SiCss3 size='26px' /></Certificado>
                     <Certificado titulo={'JavaScript'}><SiJavascript size='26px' /></Certificado>
@@ -62,7 +62,7 @@ const Educacion = () => {
                     <Certificado titulo={'Cypress'}><SiCypress size='26px' /></Certificado>
                 </div>
                 <div className='vercertificados'>
-                    <a href="https://www.linkedin.com/in/navashenrym/details/certifications/" target='_blank' rel='noreferrer'><button>Ver más <HiOutlineExternalLink size='18px' /></button></a>
+                    <a href="https://www.linkedin.com/in/navashenrym/details/certifications/" target='_blank' rel='noreferrer'><button className='rounded-3'>Ver más <HiOutlineExternalLink size='18px' /></button></a>
                 </div>
             </div>
     </section>

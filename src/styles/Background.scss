@@ -3,15 +3,15 @@
 .shape {
     border-radius: 50%;
     position: absolute;
-    opacity: 70%;
+    opacity: 90%;
     z-index: -1;
 }
 
 #shape1, #shape2, #shape3, #shape4, #shape5 {
-    min-width: 400px;
-    height: 400px;
+    min-width: 300px;
+    height: 300px;
     //mix-blend-mode: multiply;
-    filter: blur(150px);
+    filter: blur(120px);
 }
 
 #shape1 {
@@ -38,7 +38,7 @@
     background-color: hsl(150, 43%, 39%);
     bottom: 0%;
     left: 5%;
-    opacity: 50%;
+    opacity: 70%;
 }
 
 .scale-up-center {
@@ -66,16 +66,7 @@
     animation-delay: 4s;
   }
 
-  @media (max-width: 720px) {
-  
-    #shape1, #shape2, #shape3, #shape4, #shape5 {
-        min-width: 300px;
-        height: 300px;
-    }
-
-  }
-
-  @media (max-width: 640px) {
+  @media (max-width: 425px) {
   
     #shape1, #shape2, #shape3, #shape4, #shape5 {
         min-width: 200px;

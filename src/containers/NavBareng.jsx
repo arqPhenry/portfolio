@@ -1,7 +1,7 @@
 import React from 'react'
 import '@styles/NavBar.scss'
 import loguito from '../assets/logo.svg'
-import { handleClickInfo, handleClickContact, handleClickLogo, handleClickPortfolio, handleClickEducation } from './NavBar'
+import { handleClickContact, handleClickLogo, handleClickPortfolio, handleClickEducation } from './NavBar'
 import { NavLink } from 'react-router-dom'
 
 const NavBareng = () => {
@@ -12,9 +12,6 @@ const NavBareng = () => {
           <ul>
             <li>
               <button onClick={handleClickLogo}>Home</button>
-            </li>
-            <li>
-              <button onClick={handleClickInfo}>Info</button>
             </li>
             <li>
               <button onClick={handleClickContact}>Contact</button>

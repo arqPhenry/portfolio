@@ -1,5 +1,4 @@
 import React from 'react'
-import '@styles/Home.scss'
 import { NavBareng } from '@containers/NavBareng'
 import { Presentation } from '@containers/Presentation'
 import { Aboutme } from '@containers/Aboutme'

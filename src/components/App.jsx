@@ -1,12 +1,13 @@
 import React from 'react'
 import '@styles/global.scss'
-import { Router } from '../routes/index'
+import { Router } from '../routes/Router.jsx'
+import { LangProvider } from '../context/langContext'
 
 const App = () => {
   return (
-        <>
-         <Router />
-        </>
+    <LangProvider>
+      <Router />
+    </LangProvider>
   )
 }
 

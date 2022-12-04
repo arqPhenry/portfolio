@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { langContext } from '../context/langContext'
+import { FormattedMessage } from 'react-intl'
 import '@styles/NavBar.scss'
 // import loguito from '../assets/logo.svg'
-import { NavLink } from 'react-router-dom'
 
 export const handleClickLogo = () => {
   document.getElementById('inicio').scrollIntoView({ behavior: 'smooth', block: 'center' })
@@ -20,6 +21,8 @@ export const handleClickEducation = () => {
 }
 
 const NavBar = () => {
+  const idioma = useContext(langContext)
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark rounded-bottom fixed-top py-0">
       <div className="container d-flex">
@@ -29,22 +32,22 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
-              <button onClick={handleClickLogo}>Inicio</button>
+              <button onClick={handleClickLogo}><FormattedMessage id='nav.home' defaultMessage='Inicio' /></button>
             </li>
             <li className="nav-item">
-              <button onClick={handleClickContact}>Contacto</button>
+              <button onClick={handleClickContact}><FormattedMessage id='nav.contact' defaultMessage='Contacto' /></button>
             </li>
             <li className="nav-item">
-              <button onClick={handleClickPortfolio}>Portfolio</button>
+              <button onClick={handleClickPortfolio}><FormattedMessage id='nav.portfolio' defaultMessage='Portafolio' /></button>
             </li>
             <li className="nav-item">
-              <button onClick={handleClickEducation}>Educación</button>
+              <button onClick={handleClickEducation}><FormattedMessage id='nav.education' defaultMessage='Educacion' /></button>
             </li>
           </ul>
         </div>
         <div className='ms-auto d-flex'>
-          <NavLink to='/' className='link'>ES</NavLink>
-          <NavLink to='/en' className='link'>EN</NavLink>
+          <button onClick={() => idioma.establecerLenguaje('es-MX')} className='link'>ES</button>
+          <button onClick={() => idioma.establecerLenguaje('en-US')} className='link'>EN</button>
         </div>
       </div>
     </nav>

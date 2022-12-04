@@ -2,6 +2,11 @@
     
         nav { 
             background-color:  var(--gray-transparentoso3) !important;
+            .navbar-toggler {
+                &:hover{
+                    border: none;
+                }
+            }
             ul{
                 li{ 
                     button {

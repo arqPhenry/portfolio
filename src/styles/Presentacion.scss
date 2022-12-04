@@ -1,7 +1,10 @@
+@use 'vars';
+
 .presentacion {
 
     h1 {
         font-size: 54px;
+        filter: drop-shadow(0px 10px 25px rgba(44, 53, 45, 0.65));
     }
     h3 {
         font-size: 32px;
@@ -9,6 +12,7 @@
 
     figure {
         position: relative;
+        object-fit: cover;
         &::before {
             content: '';
             position: absolute;
@@ -29,6 +33,7 @@
         }
         img {
             width: 100%;
+            border-radius: 12px;
         }
         
     }
@@ -38,10 +43,10 @@
     .presentacion {
 
         h1 {
-            font-size: 32px;
+            font-size: 28px;
         }
         h3 {
-            font-size: 24px;
+            font-size: 16px;
         }
     }
 

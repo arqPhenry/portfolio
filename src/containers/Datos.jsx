@@ -3,6 +3,7 @@ import '@styles/Datos.scss'
 import { Etiqueta } from '../components/Etiqueta'
 import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai'
 import { HiOutlineDocumentText, HiOutlineMail } from 'react-icons/hi'
+import { FormattedMessage } from 'react-intl'
 import cv from '../assets/HenryNavasCV.pdf'
 
 const Datos = () => {
@@ -12,7 +13,7 @@ const Datos = () => {
 
   return (
     <section className='col-12 col-md-4 datos' id='contacto'>
-      <div className="col-12"><Etiqueta texto={'Contacto'}/></div>
+      <div className="col-12"><Etiqueta texto={<FormattedMessage id='contact.title' />}/></div>
       <div className='col-12 contacto'>
         <ul>
           <li className='rounded-3 py-2'>

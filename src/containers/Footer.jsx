@@ -2,6 +2,7 @@ import React from 'react'
 import '@styles/Footer.scss'
 import { HiArrowNarrowUp } from 'react-icons/hi'
 import { handleClickLogo } from './NavBar'
+import { FormattedMessage } from 'react-intl'
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
         <button onClick={handleClickLogo} className='mb-2'><HiArrowNarrowUp size='18px' /></button>
         <span>
             Henry Navas ®<br />
-            2022. All rights reserved.
+            2022. <FormattedMessage id='footer.rights' />
         </span>
       </div>
     </footer>

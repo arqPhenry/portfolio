@@ -1,0 +1,40 @@
+{
+    "presentation.title": "Hello, i'm Henry Navas",
+    "presentation.subtitle": "Front-end Developer | Web & Mobile Apps | React.js",
+
+    "nav.home": "Home",
+    "nav.contact": "Contact",
+    "nav.portfolio": "Portfolio",
+    "nav.education": "Education",
+
+    "about.title": "About me",
+    "about.info": "Frontend web developer specialized in React.js, and in the creation of mobile applications. Interested in developing highly impactful digital products with unique interfaces and immersive uses. Strongly influenced by performance, best practices and agile methodologies. In the future, I want to contribute to decision making in the creation of our physical environment, through technology. Making the union of both disciplines, and thus creating new parameters.",
+
+    "contact.title": "Contact",
+
+    "portf.title": "Latest projects",
+    "portf.open-button": "Open",
+
+    "edu.title": "Education",
+    "edu.date1": "April 2021 - Present",
+    "edu.date2": "Sept 2020 - Present",
+    "edu.RDC": "Frontend path with React, with all its bases:",
+    "edu.RDC1": "Render Patterns",
+    "edu.RDC2": "Professional State Management",
+    "edu.RDC3": "Navigation with React Router, etc.",
+    "edu.frontDescript": "Training as a frontend web developer making use of current technologies (ECMAscript 6, WebPack, TailwindCSS, NPM, Bootstrap, TypeScript, etc.), clean code, optimizations, testing and soft skills.",
+    "edu.arch": "Bachelor of Architecture (BArch)",
+    "edu.title-tech": "Technologies",
+    "edu.see": "See more",
+
+    "form.title": "Contact me",
+    "form.descrp": "I am available for freelance work, collaborations or just to say hello. If you want to contact me, please fill out the form below.",
+    "form.name": "Name",
+    "form.subject": "Subject",
+    "form.subject-placeholder": "Henry, i need you, Jarvis broke down 🤖",
+    "form.message": "Message",
+    "form.message-placeholder": "A problem arose in the battle with Ultron, he accessed Jarvis' systems, bypassing all the security walls, and now he plans to wipe out the entire internet. I shut it down, but I need you to redo his algorithm and bring it back to normal...",
+    "form.submit": "Submit",
+
+    "footer.rights": "All rights reserved."
+}

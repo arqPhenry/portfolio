@@ -1,7 +1,7 @@
 @use 'vars';
 
 .shape {
-    border-radius: 50%;
+    border-radius: 50% 24% 90% 15%;
     position: absolute;
     opacity: 90%;
     z-index: -1;
@@ -11,18 +11,19 @@
     min-width: 300px;
     height: 300px;
     //mix-blend-mode: multiply;
-    filter: blur(120px);
+    filter: blur(50px);
 }
 
 #shape1 {
     background-color: hsl(150, 83%, 64%);
     top: 0%;
-    left: 0%;
+    left: 10%;
 }
 #shape2 {
     background-color: 	hsl(0, 0%, 29%);
     top: 20%;
-    right: 0%;
+    right: 15%;
+    opacity: 50%;
 }
 #shape3 {
     background-color: hsl(150, 43%, 39%);
@@ -32,12 +33,12 @@
 #shape4 {
     background-color: 	hsl(131, 7%, 47%);
     top: 60%;
-    right: 5%;
+    right: 15%;
 }
 #shape5 {
     background-color: hsl(150, 43%, 39%);
     bottom: 0%;
-    left: 5%;
+    left: 15%;
     opacity: 70%;
 }
 

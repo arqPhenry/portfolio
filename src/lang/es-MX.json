@@ -1,0 +1,40 @@
+{   
+    "nav.home": "Inicio",
+    "nav.contact": "Contacto",
+    "nav.portfolio": "Portafolio",
+    "nav.education": "Educación",
+
+    "presentation.title": "Hola, soy Henry Navas",
+    "presentation.subtitle": "Desarrollador Front-end | Web & Mobile Apps | React.js",
+
+    "about.title": "Acerca de mí",
+    "about.info": "Desarrollador web frontend especializado en React.js, y en la creación de aplicaciones móviles. Interesado en el desarrollo de productos digitales altamente impactantes con interfaces únicas y usos envolventes. Con grandes influencias por el performance, buenas prácticas y metodologías ágiles. A futuro, quiero aportar en la toma de decisiones en la creación de nuestro entorno físico, por medio de la tecnología. Haciendo la unión de ambas disciplinas, y creando así nuevos parámetros.",
+
+    "contact.title": "Contacto",
+
+    "portf.title": "Últimos proyectos",
+    "portf.open-button": "Abrir",
+
+    "edu.title": "Educación",
+    "edu.date1": "Abril 2022 - Actualidad",
+    "edu.date2": "Sep 2021 - Actualidad",
+    "edu.RDC": "Ruta de Frontend con React, con todas sus bases:",
+    "edu.RDC1": "Patrones de render",
+    "edu.RDC2": "Manejo Profesional del Estado",
+    "edu.RDC3": "Navegación con React Router, etc.",
+    "edu.frontDescript": "Formación como frontend web developer haciendo uso de tecnologías actuales (ECMAscript 6, WebPack, TailwindCSS, NPM, Bootstrap, TypeScript, etc.), código limpio, optimizaciones, testing y habilidades blandas.",
+    "edu.arch": "Arquitecto",
+    "edu.title-tech": "Tecnologías",
+    "edu.see": "Ver más",
+
+    "form.title": "Contáctame",
+    "form.descrp": "Estoy disponible para trabajos independientes, colaboraciones o simplemente para saludar. Si quieres ponerte en contacto conmigo, rellena el siguiente formulario.",
+    "form.name": "Nombre",
+    "form.subject": "Asunto",
+    "form.subjectp": "Henry, te necesito, Jarvis se descompuso 🤖",
+    "form.message": "Mensaje",
+    "form.messagep": "Surgió un problema en la batalla con Ultrón, accedió a los sistemas de Jarvis, saltandose todos los muros de seguridad, y ahora planea borrar el internet entero. Lo desconecté, pero te necesito para rehacer su algoritmo y devolverlo a la normalidad...",
+    "form.submit": "Enviar",
+
+    "footer.rights": "Todos los derechos reservados."
+}

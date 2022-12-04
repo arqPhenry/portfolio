@@ -2,6 +2,7 @@ import React from 'react'
 import '@styles/Portafolio.scss'
 import { Etiqueta } from '../components/Etiqueta'
 import { Proyecto } from '../components/Proyecto'
+import { FormattedMessage } from 'react-intl'
 
 const Portafolio = () => {
   const t1 = 'Ecommerce Site - YardSale Shop'
@@ -54,7 +55,7 @@ const Portafolio = () => {
   return (
     <section className='row portafolio mt-4' id='portafolio'>
         <div className='col'>
-            <Etiqueta texto={'Últimos proyectos'} />
+            <Etiqueta texto={<FormattedMessage id='portf.title'/>} />
             <div className='proyectos'>
                 <Proyecto
                     titulo={t1}

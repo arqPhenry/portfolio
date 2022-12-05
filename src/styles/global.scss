@@ -29,4 +29,32 @@ body {
     .bg-henry {
         background-color: var(--gray-transparentoso);
     }
+
+    .modal-content {
+        background-color: var(--gray-transparentoso3);
+        border-radius: 0 0 16px 16px;
+        border-top: 4px solid var(--hospital-green);
+        .modal-header{
+            border-bottom: none;
+            color: var(--gray);
+
+            button {
+                background-color: var(--gray-transparentoso); 
+                color: var(--gray);
+                border-radius: 6px;
+                border: none;
+                transition: 0.25s ease all;
+
+                &:hover {
+                    background-color: var(--hospital-green); 
+                    color: var(--black);
+                }
+            }
+        }
+        .modal-body{
+            .carousel-inner {
+                border-radius: 8px;
+            }
+        }
+    }
 }

@@ -22,6 +22,9 @@ const LangProvider = ({ children }) => {
       defaultLocale = 'en-US'
       defaultMessages = englishMessages
     }
+  } else {
+    defaultLocale = 'en-US'
+    defaultMessages = englishMessages
   }
 
   const establecerLenguaje = (lenguaje) => {

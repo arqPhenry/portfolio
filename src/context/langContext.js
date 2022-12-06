@@ -5,10 +5,11 @@ import { IntlProvider } from 'react-intl'
 
 const langContext = createContext()
 
+// eslint-disable-next-line react/prop-types
 const LangProvider = ({ children }) => {
-  const defaultLocale = 'es-MX'
-  const defaultMessages = spanishMessages
-  /* const lang = localStorage.getItem('lang')
+  let defaultLocale
+  let defaultMessages
+  const lang = localStorage.getItem('lang')
 
   if (lang) {
     defaultLocale = lang
@@ -21,24 +22,24 @@ const LangProvider = ({ children }) => {
       defaultLocale = 'en-US'
       defaultMessages = englishMessages
     }
-  } */
+  }
 
   const establecerLenguaje = (lenguaje) => {
     switch (lenguaje) {
       case 'es-MX':
         establecerMensajes(spanishMessages)
         establecerLocale('es-MX')
-        // localStorage.setItem('lang', 'es-MX')
+        localStorage.setItem('lang', 'es-MX')
         break
       case 'en-US':
         establecerMensajes(englishMessages)
         establecerLocale('en-US')
-        // localStorage.setItem('lang', 'en-US')
+        localStorage.setItem('lang', 'en-US')
         break
       default:
-        establecerMensajes(spanishMessages)
-        establecerLocale('es-MX')
-        // localStorage.setItem('lang', 'es-MX')
+        establecerMensajes(englishMessages)
+        establecerLocale('en-US')
+        localStorage.setItem('lang', 'en-US')
     }
   }
 

@@ -25,12 +25,12 @@ const Formulario = () => {
 
                 <fieldset>
                     <label htmlFor="subject"><FormattedMessage id='form.subject' /></label>
-                    <input type="text" name="subject" id='subject' placeholder='Henry, te necesito, Jarvis se descompuso 🤖' />
+                    <input type="text" name="subject" id='subject' placeholder='Henry, i need you, Jarvis broke down 🤖' />
                 </fieldset>
 
                 <fieldset>
                     <label htmlFor="message"><FormattedMessage id='form.message' /></label>
-                    <textarea name="message" id='message' />
+                    <textarea name="message" id='message' placeholder="A problem arose in the battle with Ultron, he accessed Jarvis' systems, bypassing all the security walls, and now he plans to wipe out the entire internet. I shut it down, but I need you to redo his algorithm and bring it back to normal..."/>
                 </fieldset>
 
                 <fieldset>

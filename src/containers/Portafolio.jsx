@@ -3,7 +3,7 @@ import '@styles/Portafolio.scss'
 import { Etiqueta } from '../components/Etiqueta'
 import { Proyecto } from '../components/Proyecto'
 import { FormattedMessage } from 'react-intl'
-import { MP1photos, MP2photos, MP3photos, MP4photos } from '../hooks/imagenes'
+import { MP1photos, MP2photos, MP3photos, MP4photos, MP5photos } from '../hooks/imagenes'
 
 const Portafolio = () => {
   const t1 = 'Ecommerce Site - YardSale Shop'
@@ -61,6 +61,20 @@ const Portafolio = () => {
   const mdi4 = 'MP4'
   const MP4 = MP4photos
 
+
+  const t5 = 'Perrihijos'
+  const descrp5 = `Pet sitter app.
+
+  Users can:
+  - Register as caregivers or pet owners.
+  - Find pet walking and pet sitting services, by proximity and score.
+  - Make community with other pet owners.`
+  const fecha5 = 'June 2023'
+  const link5 = 'https://perrihijos.bubbleapps.io/version-test/'
+  const repo5 = 'https://perrihijos.bubbleapps.io/version-test/'
+  const mdi5 = 'MP5'
+  const MP5 = MP5photos
+
   return (
     <section className='row portafolio mt-4' id='portafolio'>
         <div className='col'>
@@ -98,6 +112,14 @@ const Portafolio = () => {
                     repo={repo4}
                     mid={mdi4}
                     images={MP4} />
+                <Proyecto
+                    titulo={t5}
+                    descrp={descrp5}
+                    fecha={fecha5}
+                    link={link5}
+                    repo={repo5}
+                    mid={mdi5}
+                    images={MP5} />
             </div>
         </div>
     </section>

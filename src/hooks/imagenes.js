@@ -26,6 +26,13 @@ import MP4d from '../assets/MP4-4.png'
 import MP4e from '../assets/MP4-5.png'
 import MP4f from '../assets/MP4-6.png'
 
+import MP5a from '../assets/MP5-1.png'
+import MP5b from '../assets/MP5-2.png'
+import MP5c from '../assets/MP5-3.png'
+import MP5d from '../assets/MP5-4.png'
+import MP5e from '../assets/MP5-5.png'
+import MP5f from '../assets/MP5-6.png'
+
 export const MP1photos = [MP1a, MP1b, MP1c, MP1d, MP1e, MP1f]
 
 export const MP2photos = [MP2a, MP2b, MP2c, MP2d, MP2e, MP2f]
@@ -33,3 +40,5 @@ export const MP2photos = [MP2a, MP2b, MP2c, MP2d, MP2e, MP2f]
 export const MP3photos = [MP3a, MP3b, MP3c, MP3d, MP3e, MP3f]
 
 export const MP4photos = [MP4a, MP4b, MP4c, MP4d, MP4e, MP4f]
+
+export const MP5photos = [MP5a, MP5b, MP5c, MP5d, MP5e, MP5f]

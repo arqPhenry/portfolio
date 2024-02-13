@@ -17,7 +17,7 @@ const Datos = () => {
       <div className='col-12 contacto'>
         <ul>
           <li className='rounded-3 py-2'>
-            <a href="https://www.linkedin.com/in/navashenrym/" target='_blank' rel='noreferrer'>
+            <a href="https://www.linkedin.com/in/henrynavasdev/" target='_blank' rel='noreferrer'>
               <AiOutlineLinkedin size= '24px' />
               <span>LinkedIn</span>
             </a>

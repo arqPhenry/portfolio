@@ -60,7 +60,7 @@ const Educacion = () => {
                     <Certificado titulo={'Cypress'}><SiCypress size='26px' /></Certificado>
                 </div>
                 <div className='vercertificados'>
-                    <a href="https://www.linkedin.com/in/navashenrym/details/certifications/" target='_blank' rel='noreferrer'><button className='rounded-3'><FormattedMessage id='edu.see' /> <HiOutlineExternalLink size='18px' /></button></a>
+                    <a href="https://www.linkedin.com/in/henrynavasdev/details/certifications/" target='_blank' rel='noreferrer'><button className='rounded-3'><FormattedMessage id='edu.see' /> <HiOutlineExternalLink size='18px' /></button></a>
                 </div>
             </div>
     </section>
